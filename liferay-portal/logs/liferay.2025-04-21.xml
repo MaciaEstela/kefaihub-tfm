@@ -1,0 +1,15 @@
+<log4j:event logger="com.zaxxer.hikari.pool.HikariPool" timestamp="1745274706306" level="WARN" thread="HikariPool-1 housekeeper">
+<log4j:message><![CDATA[HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h49m33s120ms413µs400ns).]]></log4j:message>
+<log4j:locationInfo class="com.zaxxer.hikari.pool.HikariPool$HouseKeeper" method="run" file="HikariPool.java" line="788"/>
+</log4j:event>
+
+<log4j:event logger="com.zaxxer.hikari.pool.PoolBase" timestamp="1745274712590" level="WARN" thread="liferay/scheduler_dispatch-4">
+<log4j:message><![CDATA[HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@39bdffa8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.]]></log4j:message>
+<log4j:locationInfo class="com.zaxxer.hikari.pool.PoolBase" method="isConnectionAlive" file="PoolBase.java" line="184"/>
+</log4j:event>
+
+<log4j:event logger="com.zaxxer.hikari.pool.PoolBase" timestamp="1745274712590" level="WARN" thread="liferay/scheduler_dispatch-5">
+<log4j:message><![CDATA[HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@e8fda08 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.]]></log4j:message>
+<log4j:locationInfo class="com.zaxxer.hikari.pool.PoolBase" method="isConnectionAlive" file="PoolBase.java" line="184"/>
+</log4j:event>
+

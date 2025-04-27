@@ -1,0 +1,113 @@
+<div class="container mt-4" *ngIf="user">
+  <h2>{{ 'ADMIN.USERS.EDIT_TITLE' | translate }} #{{ user.id }}</h2>
+
+  <form (ngSubmit)="updateUser()">
+    <div class="mb-3">
+      <label class="form-label">{{ 'REGISTER.NAME' | translate }}</label>
+      <input
+        class="form-control"
+        [(ngModel)]="user.givenName"
+        name="givenName"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">{{ 'REGISTER.SURNAME' | translate }}</label>
+      <input
+        class="form-control"
+        [(ngModel)]="user.familyName"
+        name="familyName"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">{{ 'REGISTER.EMAIL' | translate }}</label>
+      <input
+        class="form-control"
+        [(ngModel)]="user.emailAddress"
+        name="emailAddress"
+        type="email"
+        required
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">
+      {{ 'PROFILE.BUTTON.SAVE' | translate }}
+    </button>
+  </form>
+
+  <hr />
+
+  <h4 class="mt-4">{{ 'PROFILE.TITLE.PASSWORD' | translate }}</h4>
+  <form (ngSubmit)="updatePassword()">
+    <div class="mb-3">
+      <label class="form-label">{{ 'PROFILE.FIELD.PASSWORD' | translate }}</label>
+      <input
+        class="form-control"
+        [(ngModel)]="password"
+        name="password"
+        type="password"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">{{ 'PROFILE.FIELD.CONFIRM' | translate }}</label>
+      <input
+        class="form-control"
+        [(ngModel)]="confirmPassword"
+        name="confirmPassword"
+        type="password"
+        required
+      />
+    </div>
+    <button type="submit" class="btn btn-warning">
+      {{ 'PROFILE.BUTTON.PASSWORD' | translate }}
+    </button>
+  </form>
+
+  <hr class="my-4" />
+
+  <h4>{{ 'ADMIN.USERS.ROLES.TITLE' | translate }}</h4>
+
+  <ul class="list-group mb-3">
+    <li
+      class="list-group-item d-flex justify-content-between align-items-center"
+      *ngFor="let role of getFilteredRoles()"
+    >
+      {{ role.name }}
+      <button
+        class="btn btn-sm btn-outline-danger"
+        (click)="removeRole(role.externalReferenceCode!)"
+      >
+        {{ 'ADMIN.USERS.ROLES.REMOVE' | translate }}
+      </button>
+    </li>
+  </ul>
+
+  <div class="row g-2 align-items-center mt-3">
+    <div class="col-md-6">
+      <select
+        class="form-select"
+        [(ngModel)]="selectedRoleCode"
+        name="roleSelect"
+      >
+        <option [ngValue]="null">
+          {{ 'ADMIN.USERS.ROLES.SELECT' | translate }}
+        </option>
+        <option
+          *ngFor="let role of allRoles"
+          [ngValue]="role.externalReferenceCode"
+        >
+          {{ role.name }}
+        </option>
+      </select>
+    </div>
+    <div class="col-auto">
+      <button class="btn btn-outline-success" (click)="assignRole()">
+        {{ 'ADMIN.USERS.ROLES.ADD' | translate }}
+      </button>
+    </div>
+  </div>
+
+  <div *ngIf="message" class="alert alert-success mt-3">{{ message }}</div>
+  <div *ngIf="error" class="alert alert-danger mt-3">{{ error }}</div>
+</div>

@@ -1,0 +1,41 @@
+<div class="container mt-4">
+    <h2>{{ 'ADMIN.USERS.NEW' | translate }}</h2>
+  
+    <form (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label class="form-label">{{ 'REGISTER.NAME' | translate }}</label>
+        <input class="form-control" [(ngModel)]="givenName" name="givenName" required />
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">{{ 'REGISTER.SURNAME' | translate }}</label>
+        <input class="form-control" [(ngModel)]="familyName" name="familyName" required />
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">{{ 'REGISTER.EMAIL' | translate }}</label>
+        <input class="form-control" [(ngModel)]="emailAddress" name="emailAddress" type="email" required />
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">{{ 'REGISTER.USERNAME' | translate }}</label>
+        <input class="form-control" [(ngModel)]="alternateName" name="alternateName" required />
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">{{ 'REGISTER.PASSWORD' | translate }}</label>
+        <input class="form-control" [(ngModel)]="password" name="password" type="password" required />
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">{{ 'PROFILE.FIELD.CONFIRM' | translate }}</label>
+        <input class="form-control" [(ngModel)]="confirmPassword" name="confirmPassword" type="password" required />
+      </div>
+  
+      <button type="submit" class="btn btn-success">{{ 'REGISTER.SUBMIT' | translate }}</button>
+    </form>
+  
+    <div *ngIf="success" class="alert alert-success mt-3">{{ success }}</div>
+    <div *ngIf="error" class="alert alert-danger mt-3">{{ error }}</div>
+  </div>
+  

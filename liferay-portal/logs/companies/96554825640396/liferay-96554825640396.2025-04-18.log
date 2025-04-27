@@ -1,0 +1,8 @@
+2025-04-18 16:03:05.433 WARN  [http-nio-8080-exec-5][LiferayOAuthDataProvider:848] Remote client 127.0.0.1 - 127.0.0.1 tried to use a nonexistent OAuth 2 client ID kefaihub-client
+2025-04-18 16:03:13.863 WARN  [http-nio-8080-exec-3][LiferayOAuthDataProvider:848] Remote client 127.0.0.1 - 127.0.0.1 tried to use a nonexistent OAuth 2 client ID kefaihub-client
+2025-04-18 16:03:15.173 WARN  [http-nio-8080-exec-8][LiferayOAuthDataProvider:848] Remote client 127.0.0.1 - 127.0.0.1 tried to use a nonexistent OAuth 2 client ID kefaihub-client
+2025-04-18 16:03:15.387 WARN  [http-nio-8080-exec-7][LiferayOAuthDataProvider:848] Remote client 127.0.0.1 - 127.0.0.1 tried to use a nonexistent OAuth 2 client ID kefaihub-client
+2025-04-18 16:03:20.994 WARN  [http-nio-8080-exec-2][LiferayOAuthDataProvider:848] Remote client 127.0.0.1 - 127.0.0.1 tried to use a nonexistent OAuth 2 client ID kefaihub-client
+2025-04-18 16:03:45.379 WARN  [http-nio-8080-exec-1][LiferayOAuthDataProvider:848] Remote client 127.0.0.1 - 127.0.0.1 tried to use a nonexistent OAuth 2 client ID kefaihub-client
+2025-04-18 16:03:45.518 WARN  [http-nio-8080-exec-8][LiferayOAuthDataProvider:848] Remote client 127.0.0.1 - 127.0.0.1 tried to use a nonexistent OAuth 2 client ID kefaihub-client
+2025-04-18 16:03:45.737 WARN  [http-nio-8080-exec-9][LiferayOAuthDataProvider:848] Remote client 127.0.0.1 - 127.0.0.1 tried to use a nonexistent OAuth 2 client ID kefaihub-client

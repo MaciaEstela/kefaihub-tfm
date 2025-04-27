@@ -1,0 +1,153 @@
+/*C2*/SET SCHEMA PUBLIC
+DELETE FROM RELEASE_ WHERE RELEASEID=1
+INSERT INTO RELEASE_ VALUES(0,1,'2025-02-18 21:20:21.000000','2025-02-18 21:20:21.000000','portal','31.14.0',7403,'2025-04-10 18:12:05.000000','0',NULL,'You take the blue pill, the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill, you stay in Wonderland, and I show you how deep the rabbit hole goes.')
+COMMIT
+DELETE FROM QUARTZ_TRIGGERS WHERE SCHED_NAME='PersistedQuartzSchedulerEngineInstance' AND TRIGGER_NAME='DISPATCH_JOB_0031101@59206091757698' AND TRIGGER_GROUP='DISPATCH_GROUP_0031101@59206091757698'
+INSERT INTO QUARTZ_TRIGGERS VALUES('PersistedQuartzSchedulerEngineInstance','DISPATCH_JOB_0031101@59206091757698','DISPATCH_GROUP_0031101@59206091757698','DISPATCH_JOB_0031101@59206091757698','DISPATCH_GROUP_0031101@59206091757698',NULL,1744308726076,-1,5,'WAITING','CRON',1739913656000,0,NULL,0,3)
+DELETE FROM QUARTZ_CRON_TRIGGERS WHERE SCHED_NAME='PersistedQuartzSchedulerEngineInstance' AND TRIGGER_NAME='DISPATCH_JOB_0031101@59206091757698' AND TRIGGER_GROUP='DISPATCH_GROUP_0031101@59206091757698'
+INSERT INTO QUARTZ_CRON_TRIGGERS VALUES('PersistedQuartzSchedulerEngineInstance','DISPATCH_JOB_0031101@59206091757698','DISPATCH_GROUP_0031101@59206091757698','0 0 0 * * ?','UTC')
+SET SCHEMA SYSTEM_LOBS
+DELETE FROM LOB_IDS WHERE LOB_ID=3
+INSERT INTO LOB_IDS VALUES(3,0,0,30)
+DELETE FROM LOB_IDS WHERE LOB_ID=3
+INSERT INTO LOB_IDS VALUES(3,0,1,30)
+COMMIT
+/*C3*/SET SCHEMA PUBLIC
+DELETE FROM QUARTZ_TRIGGERS WHERE SCHED_NAME='PersistedQuartzSchedulerEngineInstance' AND TRIGGER_NAME='DISPATCH_JOB_0031101@59206091757698' AND TRIGGER_GROUP='DISPATCH_GROUP_0031101@59206091757698'
+INSERT INTO QUARTZ_TRIGGERS VALUES('PersistedQuartzSchedulerEngineInstance','DISPATCH_JOB_0031101@59206091757698','DISPATCH_GROUP_0031101@59206091757698','DISPATCH_JOB_0031101@59206091757698','DISPATCH_GROUP_0031101@59206091757698',NULL,1744308726076,-1,5,'ACQUIRED','CRON',1739913656000,0,NULL,0,3)
+INSERT INTO QUARTZ_FIRED_TRIGGERS VALUES('PersistedQuartzSchedulerEngineInstance','NON_CLUSTERED1744308724341','DISPATCH_JOB_0031101@59206091757698','DISPATCH_GROUP_0031101@59206091757698','NON_CLUSTERED',1744308726076,5,'ACQUIRED',NULL,NULL,'0','0')
+SET SCHEMA SYSTEM_LOBS
+DELETE FROM LOB_IDS WHERE LOB_ID=3
+INSERT INTO LOB_IDS VALUES(3,0,0,30)
+DELETE FROM LOB_IDS WHERE LOB_ID=3
+INSERT INTO LOB_IDS VALUES(3,0,1,30)
+COMMIT
+SET SCHEMA PUBLIC
+DELETE FROM QUARTZ_FIRED_TRIGGERS WHERE SCHED_NAME='PersistedQuartzSchedulerEngineInstance' AND ENTRY_ID='NON_CLUSTERED1744308724341'
+INSERT INTO QUARTZ_FIRED_TRIGGERS VALUES('PersistedQuartzSchedulerEngineInstance','NON_CLUSTERED1744308724341','DISPATCH_JOB_0031101@59206091757698','DISPATCH_GROUP_0031101@59206091757698','NON_CLUSTERED',1744308726076,5,'EXECUTING','DISPATCH_JOB_0031101@59206091757698','DISPATCH_GROUP_0031101@59206091757698','0','0')
+DELETE FROM QUARTZ_TRIGGERS WHERE SCHED_NAME='PersistedQuartzSchedulerEngineInstance' AND TRIGGER_NAME='DISPATCH_JOB_0031101@59206091757698' AND TRIGGER_GROUP='DISPATCH_GROUP_0031101@59206091757698'
+INSERT INTO QUARTZ_TRIGGERS VALUES('PersistedQuartzSchedulerEngineInstance','DISPATCH_JOB_0031101@59206091757698','DISPATCH_GROUP_0031101@59206091757698','DISPATCH_JOB_0031101@59206091757698','DISPATCH_GROUP_0031101@59206091757698',NULL,1744329600000,1744308726076,5,'WAITING','CRON',1739913656000,0,NULL,0,3)
+DELETE FROM QUARTZ_CRON_TRIGGERS WHERE SCHED_NAME='PersistedQuartzSchedulerEngineInstance' AND TRIGGER_NAME='DISPATCH_JOB_0031101@59206091757698' AND TRIGGER_GROUP='DISPATCH_GROUP_0031101@59206091757698'
+INSERT INTO QUARTZ_CRON_TRIGGERS VALUES('PersistedQuartzSchedulerEngineInstance','DISPATCH_JOB_0031101@59206091757698','DISPATCH_GROUP_0031101@59206091757698','0 0 0 * * ?','UTC')
+SET SCHEMA SYSTEM_LOBS
+DELETE FROM LOB_IDS WHERE LOB_ID=3
+INSERT INTO LOB_IDS VALUES(3,0,0,30)
+DELETE FROM LOB_IDS WHERE LOB_ID=3
+INSERT INTO LOB_IDS VALUES(3,0,1,30)
+COMMIT
+/*C2*/SET SCHEMA PUBLIC
+DELETE FROM QUARTZ_FIRED_TRIGGERS WHERE SCHED_NAME='PersistedQuartzSchedulerEngineInstance' AND ENTRY_ID='NON_CLUSTERED1744308724341'
+COMMIT
+DELETE FROM COUNTER WHERE NAME='com.liferay.counter.kernel.model.Counter'
+INSERT INTO COUNTER VALUES('com.liferay.counter.kernel.model.Counter',31987)
+COMMIT
+INSERT INTO DISPATCHLOG VALUES(0,31888,59206091757698,20096,NULL,'2025-04-10 18:12:06.771000','2025-04-10 18:12:06.771000',31101,'2025-04-10 18:12:06.285000','Unable to find dispatch task executor of type scheduled-publications-conflict-checks',NULL,'2025-04-10 18:12:06.285000',3)
+COMMIT
+DELETE FROM CONFIGURATION_ WHERE CONFIGURATIONID='com.liferay.portal.vulcan.internal.configuration.VulcanCompanyConfiguration~8f0ba356-bfaa-421a-9b54-70d602032e9c'
+COMMIT
+INSERT INTO CONFIGURATION_ VALUES('com.liferay.portal.vulcan.internal.configuration.VulcanCompanyConfiguration~365a7c61-a696-43b1-b786-6019b80b565c',':org.apache.felix.configadmin.revision:=L"1"\u000d\u000acompanyId="59206091757698"\u000d\u000aexcludedOperationIds="postScopeScopeKey,getScopeScopeKeyPage,deleteScopeScopeKeyByExternalReferenceCode,getScopeScopeKeyByExternalReferenceCode,patchScopeScopeKeyByExternalReferenceCode,putScopeScopeKeyByExternalReferenceCode,putScopeScopeKeyByExternalReferenceCodeObjectActionObjectActionName"\u000d\u000apath="/functional-cookies-entries"\u000d\u000aservice.bundleLocation="?"\u000d\u000aservice.factoryPid="com.liferay.portal.vulcan.internal.configuration.VulcanCompanyConfiguration"\u000d\u000aservice.pid="com.liferay.portal.vulcan.internal.configuration.VulcanCompanyConfiguration~365a7c61-a696-43b1-b786-6019b80b565c"\u000d\u000a')
+COMMIT
+DELETE FROM CONFIGURATION_ WHERE CONFIGURATIONID='com.liferay.portal.vulcan.internal.configuration.VulcanCompanyConfiguration~5328618d-0893-4378-a3cc-06752206d99f'
+COMMIT
+INSERT INTO CONFIGURATION_ VALUES('com.liferay.portal.vulcan.internal.configuration.VulcanCompanyConfiguration~78723d12-d7f0-45a2-b983-aa869099e728',':org.apache.felix.configadmin.revision:=L"1"\u000d\u000acompanyId="59206091757698"\u000d\u000aexcludedOperationIds="postScopeScopeKey,getScopeScopeKeyPage,deleteScopeScopeKeyByExternalReferenceCode,getScopeScopeKeyByExternalReferenceCode,patchScopeScopeKeyByExternalReferenceCode,putScopeScopeKeyByExternalReferenceCode,putScopeScopeKeyByExternalReferenceCodeObjectActionObjectActionName"\u000d\u000apath="/necessary-cookies-entries"\u000d\u000aservice.bundleLocation="?"\u000d\u000aservice.factoryPid="com.liferay.portal.vulcan.internal.configuration.VulcanCompanyConfiguration"\u000d\u000aservice.pid="com.liferay.portal.vulcan.internal.configuration.VulcanCompanyConfiguration~78723d12-d7f0-45a2-b983-aa869099e728"\u000d\u000a')
+COMMIT
+DELETE FROM CONFIGURATION_ WHERE CONFIGURATIONID='com.liferay.portal.vulcan.internal.configuration.VulcanCompanyConfiguration~8b62b4df-db18-44f4-b4c8-1dbdd8e085ad'
+COMMIT
+INSERT INTO CONFIGURATION_ VALUES('com.liferay.portal.vulcan.internal.configuration.VulcanCompanyConfiguration~0b046d26-d176-404f-b6a5-6fc037331242',':org.apache.felix.configadmin.revision:=L"1"\u000d\u000acompanyId="59206091757698"\u000d\u000aexcludedOperationIds="postScopeScopeKey,getScopeScopeKeyPage,deleteScopeScopeKeyByExternalReferenceCode,getScopeScopeKeyByExternalReferenceCode,patchScopeScopeKeyByExternalReferenceCode,putScopeScopeKeyByExternalReferenceCode,putScopeScopeKeyByExternalReferenceCodeObjectActionObjectActionName"\u000d\u000apath="/performance-cookies-entries"\u000d\u000aservice.bundleLocation="?"\u000d\u000aservice.factoryPid="com.liferay.portal.vulcan.internal.configuration.VulcanCompanyConfiguration"\u000d\u000aservice.pid="com.liferay.portal.vulcan.internal.configuration.VulcanCompanyConfiguration~0b046d26-d176-404f-b6a5-6fc037331242"\u000d\u000a')
+COMMIT
+DELETE FROM CONFIGURATION_ WHERE CONFIGURATIONID='com.liferay.portal.vulcan.internal.configuration.VulcanCompanyConfiguration~3d3bbe40-6c4a-48cc-ac31-ad65855be0e3'
+COMMIT
+INSERT INTO CONFIGURATION_ VALUES('com.liferay.portal.vulcan.internal.configuration.VulcanCompanyConfiguration~40e5476a-a918-4199-9bd0-f0414d373a55',':org.apache.felix.configadmin.revision:=L"1"\u000d\u000acompanyId="59206091757698"\u000d\u000aexcludedOperationIds="postScopeScopeKey,getScopeScopeKeyPage,deleteScopeScopeKeyByExternalReferenceCode,getScopeScopeKeyByExternalReferenceCode,patchScopeScopeKeyByExternalReferenceCode,putScopeScopeKeyByExternalReferenceCode,putScopeScopeKeyByExternalReferenceCodeObjectActionObjectActionName"\u000d\u000apath="/personalization-cookies-entries"\u000d\u000aservice.bundleLocation="?"\u000d\u000aservice.factoryPid="com.liferay.portal.vulcan.internal.configuration.VulcanCompanyConfiguration"\u000d\u000aservice.pid="com.liferay.portal.vulcan.internal.configuration.VulcanCompanyConfiguration~40e5476a-a918-4199-9bd0-f0414d373a55"\u000d\u000a')
+COMMIT
+/*C11*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C2*/DELETE FROM COMPANY WHERE COMPANYID=59206091757698
+INSERT INTO COMPANY VALUES(1,59206091757698,0,NULL,'2025-02-18 21:20:36.883000','2025-04-10 18:21:37.860000','liferay.com','liferay.com',NULL,0,0,'1','Kefaihub','Kefaihub, Inc.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
+COMMIT
+DELETE FROM USER_ WHERE USERID=20096 AND CTCOLLECTIONID=0
+INSERT INTO USER_ VALUES(1,0,'098f9b6f-adb2-a1fb-d050-bec373124f43','098f9b6f-adb2-a1fb-d050-bec373124f43',20096,59206091757698,'2025-02-18 21:20:36.910000','2025-04-10 18:21:37.964000',20097,'password','0','0',NULL,NULL,NULL,NULL,0,'20096','default@liferay.com',0,NULL,0,NULL,0,'ca_ES','UTC',NULL,NULL,NULL,NULL,NULL,NULL,'2025-02-18 21:20:36.902000',NULL,NULL,NULL,NULL,0,'0',NULL,'1','0',0,0)
+DELETE FROM GROUP_ WHERE GROUPID=20113 AND CTCOLLECTIONID=0
+INSERT INTO GROUP_ VALUES(3,0,'b99aeba6-344e-af78-a059-03783dd51cee','L_CONTROL_PANEL',20113,59206091757698,20096,'2025-04-10 18:21:38.290000',20029,20113,0,0,'/20113/','Control Panel','<?xml version="1.0" ?><root available-locales="en_US,ca_ES," default-locale="en_US"><Name language-id="en_US">Control Panel</Name><Name language-id="ca_ES">Control Panel</Name></root>',NULL,3,'','1',0,'/control_panel','0',0,'0','1')
+DELETE FROM GROUP_ WHERE GROUPID=20116 AND CTCOLLECTIONID=0
+INSERT INTO GROUP_ VALUES(3,0,'76a2781f-e1e1-3257-434c-c6a580dd60da','L_FORMS',20116,59206091757698,20096,'2025-04-10 18:21:38.303000',20029,20116,0,0,'/20116/','Forms','<?xml version="1.0" ?><root available-locales="en_US,ca_ES," default-locale="en_US"><Name language-id="en_US">Forms</Name><Name language-id="ca_ES">Forms</Name></root>',NULL,3,'','1',0,'/forms','0',0,'0','1')
+DELETE FROM GROUP_ WHERE GROUPID=20117 AND CTCOLLECTIONID=0
+INSERT INTO GROUP_ VALUES(4,0,'ce9c724a-4672-095d-d45b-b2c26750262e','L_GUEST',20117,59206091757698,20096,'2025-04-10 18:21:38.312000',20029,20117,0,0,'/20117/','Guest','<?xml version="1.0" ?><root available-locales="en_US,ca_ES," default-locale="en_US"><Name language-id="en_US">Guest</Name><Name language-id="ca_ES">Guest</Name></root>',NULL,2,'searchLayoutCreated=true\u000a','1',0,'/guest','1',0,'0','1')
+DELETE FROM GROUP_ WHERE GROUPID=20119 AND CTCOLLECTIONID=0
+INSERT INTO GROUP_ VALUES(3,0,'2e09844e-0272-104e-9d0f-e1c29fc18395','L_USER_PERSONAL_SITE',20119,59206091757698,20096,'2025-04-10 18:21:38.319000',20118,20096,0,0,'/20119/','User Personal Site','<?xml version="1.0" ?><root available-locales="en_US,ca_ES," default-locale="en_US"><Name language-id="en_US">User Personal Site</Name><Name language-id="ca_ES">User Personal Site</Name></root>',NULL,3,'','1',0,'/personal_site','0',0,'0','1')
+DELETE FROM GROUP_ WHERE GROUPID=20120 AND CTCOLLECTIONID=0
+INSERT INTO GROUP_ VALUES(1,0,'27d85874-6984-26e1-b8aa-d81f28ae2059','27d85874-6984-26e1-b8aa-d81f28ae2059',20120,59206091757698,20096,'2025-04-10 18:21:38.329000',20023,59206091757698,0,0,'/20120/','59206091757698','<?xml version="1.0" ?><root available-locales="en_US,ca_ES," default-locale="en_US"><Name language-id="en_US">Global</Name><Name language-id="ca_ES">Global</Name></root>',NULL,0,'','1',0,'/global','1',0,'0','1')
+DELETE FROM GROUP_ WHERE GROUPID=31476 AND CTCOLLECTIONID=0
+INSERT INTO GROUP_ VALUES(1,0,'765d244b-3e98-e7c7-e18e-217c8b4cb033','765d244b-3e98-e7c7-e18e-217c8b4cb033',31476,59206091757698,20096,'2025-02-18 21:21:09.537000',28420,31475,0,0,'/31476/','31475','<?xml version="1.0" ?><root available-locales="en_US,ca_ES," default-locale="en_US"><Name language-id="en_US">Master</Name><Name language-id="ca_ES">Master</Name></root>',NULL,3,'','0',0,'/master','0',0,'0','1')
+DELETE FROM GROUP_ WHERE GROUPID=31476 AND CTCOLLECTIONID=0
+INSERT INTO GROUP_ VALUES(2,0,'765d244b-3e98-e7c7-e18e-217c8b4cb033','765d244b-3e98-e7c7-e18e-217c8b4cb033',31476,59206091757698,20096,'2025-04-10 18:21:38.350000',28420,31475,0,0,'/31476/','31475','<?xml version="1.0" ?><root available-locales="en_US,ca_ES," default-locale="en_US"><Name language-id="en_US">Master</Name><Name language-id="ca_ES">Master</Name></root>',NULL,3,'','0',0,'/master','0',0,'0','1')
+COMMIT
+DELETE FROM USER_ WHERE USERID=20123 AND CTCOLLECTIONID=0
+INSERT INTO USER_ VALUES(2,0,'2044b694-435b-a61e-7729-2496ed3103db','2044b694-435b-a61e-7729-2496ed3103db',20123,59206091757698,'2025-02-18 21:20:43.338000','2025-04-10 18:21:38.450000',20124,'{PBKDF2WITHHMACSHA1}AAAAoAAT1iB94CQBilpw/QAAAAAAAAAA5j8S8K0TTL4PG8dZHlCin6H3dTc=','1','1',NULL,NULL,NULL,NULL,0,'test','test@test.com',0,NULL,-1,NULL,0,'en_US','UTC','Welcome Test Test!',NULL,'Test',NULL,'Test',NULL,'2025-02-18 21:20:43.395000',NULL,'2025-02-18 21:20:43.395000',NULL,NULL,0,'0',NULL,'0','1',1,0)
+DELETE FROM CONTACT_ WHERE CONTACTID=20124
+INSERT INTO CONTACT_ VALUES(1,20124,59206091757698,20123,NULL,'2025-02-18 21:20:43.343000','2025-04-10 18:21:38.465000',20071,20123,0,'test@test.com','Test',NULL,'Test',0,0,'1','1970-01-01 00:00:00.000000',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
+COMMIT
+INSERT INTO ANNOUNCEMENTSDELIVERY VALUES(0,0,31889,59206091757698,20123,'general','0','0','1')
+DELETE FROM USER_ WHERE USERID=20123 AND CTCOLLECTIONID=0
+INSERT INTO USER_ VALUES(3,0,'2044b694-435b-a61e-7729-2496ed3103db','2044b694-435b-a61e-7729-2496ed3103db',20123,59206091757698,'2025-02-18 21:20:43.338000','2025-04-10 18:21:39.122000',20124,'{PBKDF2WITHHMACSHA1}AAAAoAAT1iB94CQBilpw/QAAAAAAAAAA5j8S8K0TTL4PG8dZHlCin6H3dTc=','1','0',NULL,NULL,NULL,NULL,0,'test','test@test.com',0,NULL,-1,NULL,0,'ca_ES','UTC','Et donem la benvinguda Test Test!',NULL,'Test',NULL,'Test',NULL,'2025-02-18 21:20:43.395000',NULL,'2025-02-18 21:20:43.395000',NULL,NULL,0,'0',NULL,'0','1',1,0)
+DELETE FROM CONTACT_ WHERE CONTACTID=20124
+INSERT INTO CONTACT_ VALUES(2,20124,59206091757698,20123,NULL,'2025-02-18 21:20:43.343000','2025-04-10 18:21:39.125000',20071,20123,0,'test@test.com','Test',NULL,'Test',0,0,'1','1970-01-01 00:00:00.000000',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
+INSERT INTO ANNOUNCEMENTSDELIVERY VALUES(0,0,31890,59206091757698,20123,'news','0','0','1')
+INSERT INTO ANNOUNCEMENTSDELIVERY VALUES(0,0,31891,59206091757698,20123,'test','0','0','1')
+DELETE FROM ASSETENTRY WHERE ENTRYID=20126 AND CTCOLLECTIONID=0
+INSERT INTO ASSETENTRY VALUES(1,0,20126,20120,59206091757698,20123,'Test Test','2025-02-18 21:20:43.338000','2025-04-10 18:21:39.122000',20071,20123,'2044b694-435b-a61e-7729-2496ed3103db',0,'1','0',NULL,NULL,NULL,NULL,NULL,'Test Test','','',NULL,NULL,0,0,0.0E0)
+COMMIT
+DELETE FROM USER_ WHERE USERID=20123 AND CTCOLLECTIONID=0
+INSERT INTO USER_ VALUES(4,0,'2044b694-435b-a61e-7729-2496ed3103db','2044b694-435b-a61e-7729-2496ed3103db',20123,59206091757698,'2025-02-18 21:20:43.338000','2025-04-10 18:21:39.377000',20124,'{PBKDF2WITHHMACSHA1}AAAAoAAT1iB94CQBilpw/QAAAAAAAAAA5j8S8K0TTL4PG8dZHlCin6H3dTc=','1','1',NULL,NULL,NULL,NULL,0,'test','test@test.com',0,NULL,-1,NULL,0,'ca_ES','UTC','Et donem la benvinguda Test Test!',NULL,'Test',NULL,'Test',NULL,'2025-02-18 21:20:43.395000',NULL,'2025-02-18 21:20:43.395000',NULL,NULL,0,'0',NULL,'0','1',1,0)
+COMMIT
+DELETE FROM COMPANY WHERE COMPANYID=59206091757698
+INSERT INTO COMPANY VALUES(2,59206091757698,0,NULL,'2025-02-18 21:20:36.883000','2025-04-10 18:21:39.386000','test.com','test.com',NULL,0,0,'1','Kefaihub','Kefaihub, Inc.',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
+COMMIT
+INSERT INTO COUNTER VALUES('com.liferay.portal.kernel.model.Layout#20125#true',0)
+COMMIT
+DELETE FROM COUNTER WHERE NAME='com.liferay.portal.kernel.model.Layout#20125#true'
+INSERT INTO COUNTER VALUES('com.liferay.portal.kernel.model.Layout#20125#true',1)
+COMMIT
+/*C3*/SET SCHEMA PUBLIC
+DELETE FROM COUNTER WHERE NAME='com.liferay.portal.kernel.model.Layout'
+INSERT INTO COUNTER VALUES('com.liferay.portal.kernel.model.Layout',14)
+COMMIT
+DELETE FROM COUNTER WHERE NAME='com.liferay.friendly.url.model.FriendlyURLEntryLocalization'
+INSERT INTO COUNTER VALUES('com.liferay.friendly.url.model.FriendlyURLEntryLocalization',200)
+COMMIT
+DELETE FROM COUNTER WHERE NAME='com.liferay.portal.kernel.model.ResourcePermission'
+INSERT INTO COUNTER VALUES('com.liferay.portal.kernel.model.ResourcePermission',3300)
+COMMIT
+/*C2*/INSERT INTO FRIENDLYURLENTRYMAPPING VALUES(0,0,31893,59206091757698,31214,14,31894)
+INSERT INTO FRIENDLYURLENTRY VALUES(0,0,'baab038c-7e31-bb48-7286-b2b3c210c4a8','ca_ES',31894,20125,59206091757698,'2025-04-10 18:21:40.174000','2025-04-10 18:21:40.174000',31214,14)
+INSERT INTO FRIENDLYURLENTRYLOCALIZATION VALUES(0,0,101,59206091757698,31894,'ca_ES','/home',20125,31214,14)
+INSERT INTO LAYOUT VALUES(0,0,'9b6a95e6-8430-0eb4-81db-d5a7eb921c05','9b6a95e6-8430-0eb4-81db-d5a7eb921c05',14,20125,59206091757698,20123,'Test Test','2025-04-10 18:21:40.000000','2025-04-10 18:21:40.000000',0,'1',1,0,0,0,'<?xml version="1.0" ?><root available-locales="ca_ES,sv_SE,pt_BR,ja_JP,fr_FR,hu_HU,de_DE,ar_SA,fi_FI,en_US,zh_CN,es_ES,nl_NL" default-locale="ca_ES"><Name language-id="sv_SE">Min instrumentpanel</Name><Name language-id="pt_BR">Meu Painel</Name><Name language-id="ja_JP">\u30de\u30a4\u30c0\u30c3\u30b7\u30e5\u30dc\u30fc\u30c9</Name><Name language-id="fr_FR">Mon tableau de bord</Name><Name language-id="hu_HU">Vez\u00e9rl\u0151pultom</Name><Name language-id="de_DE">Meine privaten Seiten</Name><Name language-id="ca_ES">El meu quadre de comandament</Name><Name language-id="ar_SA">\u0644\u0648\u062d\u0629 \u0627\u0644\u0645\u0639\u0644\u0648\u0645\u0627\u062a</Name><Name language-id="fi_FI">Koontin\u00e4ytt\u00f6ni</Name><Name language-id="en_US">My Dashboard</Name><Name language-id="zh_CN">\u6211\u7684\u9762\u677f</Name><Name language-id="es_ES">Panel de mando</Name><Name language-id="nl_NL">Mijn dashboard</Name></root>','','',NULL,NULL,'portlet','layout-template-id=2_columns_ii\u000aprivateLayout=true\u000a','0','0','/home',0,NULL,NULL,0,'',0,0,0,NULL,'0',NULL,'2025-04-10 18:21:40.000000',NULL,0,20123,'Test Test','2025-04-10 18:21:40.000000')
+INSERT INTO LAYOUTFRIENDLYURL VALUES(0,0,'b55fdf0f-65af-efd0-6bb1-63110e000a06',31892,20125,59206091757698,20123,'Test Test','2025-04-10 18:21:40.058000','2025-04-10 18:21:40.058000',14,'1','/home','ca_ES',NULL)
+INSERT INTO RESOURCEPERMISSION VALUES(0,0,3201,59206091757698,'com.liferay.portal.kernel.model.Layout',4,'14',14,20103,20123,65535,'1')
+INSERT INTO ASSETENTRY VALUES(0,0,31895,20125,59206091757698,20123,'Test Test','2025-04-10 18:21:40.000000','2025-04-10 18:21:40.000000',20031,14,'9b6a95e6-8430-0eb4-81db-d5a7eb921c05',0,'1','0',NULL,NULL,NULL,NULL,'text/html','El meu quadre de comandament','','',NULL,NULL,0,0,0.0E0)
+COMMIT
+DELETE FROM LAYOUT WHERE PLID=14 AND CTCOLLECTIONID=0
+INSERT INTO LAYOUT VALUES(1,0,'9b6a95e6-8430-0eb4-81db-d5a7eb921c05','9b6a95e6-8430-0eb4-81db-d5a7eb921c05',14,20125,59206091757698,20123,'Test Test','2025-04-10 18:21:40.000000','2025-04-10 18:21:40.720000',0,'1',1,0,0,0,'<?xml version="1.0" ?><root available-locales="ca_ES,sv_SE,pt_BR,ja_JP,fr_FR,hu_HU,de_DE,ar_SA,fi_FI,en_US,zh_CN,es_ES,nl_NL" default-locale="ca_ES"><Name language-id="sv_SE">Min instrumentpanel</Name><Name language-id="pt_BR">Meu Painel</Name><Name language-id="ja_JP">\u30de\u30a4\u30c0\u30c3\u30b7\u30e5\u30dc\u30fc\u30c9</Name><Name language-id="fr_FR">Mon tableau de bord</Name><Name language-id="hu_HU">Vez\u00e9rl\u0151pultom</Name><Name language-id="de_DE">Meine privaten Seiten</Name><Name language-id="ca_ES">El meu quadre de comandament</Name><Name language-id="ar_SA">\u0644\u0648\u062d\u0629 \u0627\u0644\u0645\u0639\u0644\u0648\u0645\u0627\u062a</Name><Name language-id="fi_FI">Koontin\u00e4ytt\u00f6ni</Name><Name language-id="en_US">My Dashboard</Name><Name language-id="zh_CN">\u6211\u7684\u9762\u677f</Name><Name language-id="es_ES">Panel de mando</Name><Name language-id="nl_NL">Mijn dashboard</Name></root>','','',NULL,NULL,'portlet','column-1=com_liferay_site_my_sites_web_portlet_MySitesPortlet,\u000alayout-template-id=1_column\u000aprivateLayout=true\u000a','0','0','/home',0,NULL,NULL,0,'',0,0,0,NULL,'0',NULL,'2025-04-10 18:21:40.000000',NULL,0,20123,'Test Test','2025-04-10 18:21:40.000000')
+COMMIT
+INSERT INTO COUNTER VALUES('com.liferay.portal.kernel.model.Layout#20125#false',0)
+COMMIT
+DELETE FROM COUNTER WHERE NAME='com.liferay.portal.kernel.model.Layout#20125#false'
+INSERT INTO COUNTER VALUES('com.liferay.portal.kernel.model.Layout#20125#false',1)
+COMMIT
+/*C3*/DELETE FROM COUNTER WHERE NAME='com.liferay.portal.kernel.model.Layout'
+INSERT INTO COUNTER VALUES('com.liferay.portal.kernel.model.Layout',15)
+COMMIT
+/*C2*/INSERT INTO FRIENDLYURLENTRYMAPPING VALUES(0,0,31897,59206091757698,31230,15,31898)
+INSERT INTO FRIENDLYURLENTRY VALUES(0,0,'a4fdba88-5617-88ef-b245-4b29d40d78e6','ca_ES',31898,20125,59206091757698,'2025-04-10 18:21:40.740000','2025-04-10 18:21:40.740000',31230,15)
+INSERT INTO FRIENDLYURLENTRYLOCALIZATION VALUES(0,0,102,59206091757698,31898,'ca_ES','/home',20125,31230,15)
+INSERT INTO LAYOUT VALUES(0,0,'88d24e84-210b-fba4-39cf-5f158117cf26','88d24e84-210b-fba4-39cf-5f158117cf26',15,20125,59206091757698,20123,'Test Test','2025-04-10 18:21:40.735000','2025-04-10 18:21:40.735000',0,'0',1,0,0,0,'<?xml version="1.0" ?><root available-locales="ca_ES,sv_SE,pt_BR,ja_JP,fr_FR,hu_HU,de_DE,ar_SA,fi_FI,en_US,zh_CN,es_ES,nl_NL" default-locale="ca_ES"><Name language-id="sv_SE">Min profil</Name><Name language-id="pt_BR">Meu Perfil</Name><Name language-id="ja_JP">\u30d7\u30ed\u30d5\u30a3\u30fc\u30eb</Name><Name language-id="fr_FR">Mon Profil</Name><Name language-id="hu_HU">Saj\u00e1t profil</Name><Name language-id="de_DE">Mein Profil</Name><Name language-id="ca_ES">El meu perfil</Name><Name language-id="ar_SA">\u0627\u0644\u0644\u0645\u062d\u0629 \u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629</Name><Name language-id="fi_FI">Oma profiili</Name><Name language-id="en_US">My Profile</Name><Name language-id="zh_CN">\u6211\u7684\u4e2a\u4eba\u8d44\u6599</Name><Name language-id="es_ES">Mi Perfil</Name><Name language-id="nl_NL">Mijn profiel</Name></root>','','',NULL,NULL,'portlet','layout-template-id=2_columns_ii\u000a','0','0','/home',0,NULL,NULL,0,'',0,0,0,NULL,'0',NULL,'2025-04-10 18:21:40.735000',NULL,0,20123,'Test Test','2025-04-10 18:21:40.735000')
+INSERT INTO LAYOUTFRIENDLYURL VALUES(0,0,'7c56da23-5836-a2bd-673a-566750268758',31896,20125,59206091757698,20123,'Test Test','2025-04-10 18:21:40.738000','2025-04-10 18:21:40.738000',15,'0','/home','ca_ES',NULL)
+INSERT INTO RESOURCEPERMISSION VALUES(0,0,3202,59206091757698,'com.liferay.portal.kernel.model.Layout',4,'15',15,20103,20123,65535,'1')
+INSERT INTO RESOURCEPERMISSION VALUES(0,0,3203,59206091757698,'com.liferay.portal.kernel.model.Layout',4,'15',15,20106,0,32801,'1')
+INSERT INTO RESOURCEPERMISSION VALUES(0,0,3204,59206091757698,'com.liferay.portal.kernel.model.Layout',4,'15',15,20102,0,1,'1')
+INSERT INTO ASSETENTRY VALUES(0,0,31899,20125,59206091757698,20123,'Test Test','2025-04-10 18:21:40.735000','2025-04-10 18:21:40.735000',20031,15,'88d24e84-210b-fba4-39cf-5f158117cf26',0,'1','0',NULL,NULL,NULL,NULL,'text/html','El meu perfil','','',NULL,NULL,0,0,0.0E0)
+COMMIT
+DELETE FROM LAYOUT WHERE PLID=15 AND CTCOLLECTIONID=0
+INSERT INTO LAYOUT VALUES(1,0,'88d24e84-210b-fba4-39cf-5f158117cf26','88d24e84-210b-fba4-39cf-5f158117cf26',15,20125,59206091757698,20123,'Test Test','2025-04-10 18:21:40.735000','2025-04-10 18:21:40.891000',0,'0',1,0,0,0,'<?xml version="1.0" ?><root available-locales="ca_ES,sv_SE,pt_BR,ja_JP,fr_FR,hu_HU,de_DE,ar_SA,fi_FI,en_US,zh_CN,es_ES,nl_NL" default-locale="ca_ES"><Name language-id="sv_SE">Min profil</Name><Name language-id="pt_BR">Meu Perfil</Name><Name language-id="ja_JP">\u30d7\u30ed\u30d5\u30a3\u30fc\u30eb</Name><Name language-id="fr_FR">Mon Profil</Name><Name language-id="hu_HU">Saj\u00e1t profil</Name><Name language-id="de_DE">Mein Profil</Name><Name language-id="ca_ES">El meu perfil</Name><Name language-id="ar_SA">\u0627\u0644\u0644\u0645\u062d\u0629 \u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629</Name><Name language-id="fi_FI">Oma profiili</Name><Name language-id="en_US">My Profile</Name><Name language-id="zh_CN">\u6211\u7684\u4e2a\u4eba\u8d44\u6599</Name><Name language-id="es_ES">Mi Perfil</Name><Name language-id="nl_NL">Mijn profiel</Name></root>','','',NULL,NULL,'portlet','column-1=com_liferay_contacts_web_portlet_ProfilePortlet_INSTANCE_QjNyNDXHVb4y,\u000alayout-template-id=1_column\u000a','0','0','/home',0,NULL,NULL,0,'',0,0,0,NULL,'0',NULL,'2025-04-10 18:21:40.735000',NULL,0,20123,'Test Test','2025-04-10 18:21:40.735000')
+COMMIT
+INSERT INTO PORTALPREFERENCES VALUES(0,31900,59206091757698,20123,4)
+COMMIT

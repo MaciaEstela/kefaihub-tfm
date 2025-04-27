@@ -1,0 +1,199 @@
+info:
+    description: "KefaihubRest REST API"
+    license:
+        name: "Apache 2.0"
+        url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+    title: "KefaihubRest"
+    version: v1.0
+openapi: 3.0.1
+
+tags:
+  - name: "KefaiHub"
+  - description: "KefaiHub API"
+
+paths:
+  "/sites/{siteId}/events":
+    get:
+      tags:
+        - KefaiHub
+      operationId: getEvents
+      parameters:
+        - name: siteId
+          in: path
+          required: true
+          description: groupId (or groupKey) of the group
+          schema:
+            type: string
+        - in: query
+          name: filter
+          required: false
+          schema:
+            type: string
+          description: "Filter string text"
+        - in: query
+          name: search
+          required: false
+          schema:
+            type: string
+          description: "Search string text"
+        - in: query
+          name: sortBy
+          required: false
+          schema:
+            type: string
+          description: "Field to sort"
+        - in: query
+          name: orderBy
+          required: false
+          schema:
+            type: string
+            enum: ["asc", "desc"]
+          description: "Order by ascending or descending"
+        - in: query
+          name: page
+          required: false
+          schema:
+            type: integer
+            format: int64
+            default: 1
+          description: "The page number to retrieve"
+        - in: query
+          name: pageSize
+          required: false
+          schema:
+            type: integer
+            format: int64
+            default: 20
+          description: "Number of items to retrieve per page"
+      responses:
+        200:
+          description: "Events result"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/EventResponse"
+            application/xml:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/EventResponse"
+  "/sites/{siteId}/event":
+    post:
+      tags:
+        - KefaiHub
+      operationId: postEvent
+      parameters:
+        - name: siteId
+          in: path
+          required: true
+          description: groupId (or groupKey) of the group
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+                $ref: "#/components/schemas/EventResponse"
+          application/xml:
+            schema:
+                $ref: "#/components/schemas/EventResponse"
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EventResponse"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/EventResponse"
+  "/{eventId}":
+    get:
+      tags:
+        - KefaiHub
+      operationId: getEvent
+      parameters:
+        - name: eventId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EventResponse"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/EventResponse"
+
+components:
+  schemas:
+    EventResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+        title_i18n:
+          additionalProperties:
+            type: string
+          type: object
+        description_i18n:
+          additionalProperties:
+            type: string
+          type: object
+        date:
+          type: string
+        price:
+          type: number
+        isPrivate:
+          type: boolean
+        eventType:
+          type: string
+        category:
+          type: string
+        detailsUrl_i18n:
+          additionalProperties:
+            type: string
+          type: object
+        provinceResponse:
+          $ref: "#/components/schemas/ProvinceResponse"
+        locationResponse:
+          $ref: "#/components/schemas/LocationResponse"
+        remoteResponse:
+          $ref: "#/components/schemas/RemoteResponse"
+
+    ProvinceResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        code:
+          type: integer
+
+    LocationResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+        longitude:
+          type: string
+        latitude:
+          type: string
+        address_i18n:
+          additionalProperties:
+            type: string
+          type: object
+
+    RemoteResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+        url:
+          type: string

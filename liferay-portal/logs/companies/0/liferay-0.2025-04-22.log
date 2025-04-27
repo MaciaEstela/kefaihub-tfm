@@ -1,0 +1,7 @@
+2025-04-22 10:03:49.041 WARN  [liferay/scheduler_dispatch-4][PoolBase:184] HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@58f575f1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-04-22 10:03:53.882 WARN  [HikariPool-1 housekeeper][HikariPool:788] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h34m6s109ms798µs900ns).
+2025-04-22 13:46:25.877 WARN  [liferay/scheduler_dispatch-2][PoolBase:184] HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@337bdca1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-04-22 13:46:30.951 WARN  [HikariPool-1 housekeeper][HikariPool:788] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h4m7s1ms613µs600ns).
+2025-04-22 15:39:34.483 WARN  [HikariPool-1 housekeeper][HikariPool:788] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h23m3s496ms290µs).
+2025-04-22 17:17:43.040 WARN  [HikariPool-1 housekeeper][HikariPool:788] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m38s420ms667µs100ns).
+2025-04-22 20:04:59.448 WARN  [HikariPool-1 housekeeper][HikariPool:788] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=34m46s49ms171µs300ns).

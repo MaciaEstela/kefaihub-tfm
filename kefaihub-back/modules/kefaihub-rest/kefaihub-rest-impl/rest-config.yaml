@@ -1,0 +1,9 @@
+apiDir: "../kefaihub-rest-api/src/main/java"
+apiPackagePath: "com.kefaihub.rest"
+application:
+    baseURI: "/kefaihub-rest"
+    className: "KefaihubRestApplication"
+    name: "KefaihubRest"
+author: "macia"
+clientDir: "../kefaihub-rest-client/src/main/java"
+testDir: "../kefaihub-rest-test/src/testIntegration/java"

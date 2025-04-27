@@ -1,0 +1,24 @@
+2025-04-26 09:08:22.158 WARN  [HikariPool-1 housekeeper][HikariPool:788] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h12m26s436ms611µs700ns).
+2025-04-26 10:28:13.698 INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:212] Processing com.kefaihub.rest.impl-1.0.0.jar
+2025-04-26 10:28:22.491 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:71] STOPPED com.kefaihub.rest.impl_1.0.0 [1392]
+2025-04-26 10:28:22.568 INFO  [Refresh Thread: Equinox Container: 1f845bde-bb4f-4875-bc6f-21e3504cf437][BundleStartStopLogger:68] STARTED com.kefaihub.rest.impl_1.0.0 [1392]
+2025-04-26 10:32:16.852 INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:212] Processing com.kefaihub.rest.api-1.0.0.jar
+2025-04-26 10:32:19.858 INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:212] Processing com.kefaihub.rest.impl-1.0.0.jar
+2025-04-26 10:55:44.491 INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:212] Processing com.kefaihub.rest.api-1.0.0.jar
+2025-04-26 10:55:47.494 INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:212] Processing com.kefaihub.rest.impl-1.0.0.jar
+2025-04-26 10:55:50.849 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:71] STOPPED com.kefaihub.rest.api_1.0.0 [1391]
+2025-04-26 10:55:50.856 INFO  [Refresh Thread: Equinox Container: 1f845bde-bb4f-4875-bc6f-21e3504cf437][BundleStartStopLogger:71] STOPPED com.kefaihub.rest.impl_1.0.0 [1392]
+2025-04-26 10:55:50.896 INFO  [Refresh Thread: Equinox Container: 1f845bde-bb4f-4875-bc6f-21e3504cf437][BundleStartStopLogger:68] STARTED com.kefaihub.rest.impl_1.0.0 [1392]
+2025-04-26 10:55:50.940 INFO  [Refresh Thread: Equinox Container: 1f845bde-bb4f-4875-bc6f-21e3504cf437][BundleStartStopLogger:68] STARTED com.kefaihub.rest.api_1.0.0 [1391]
+2025-04-26 10:55:55.976 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:71] STOPPED com.kefaihub.rest.impl_1.0.0 [1392]
+2025-04-26 10:55:56.010 INFO  [Refresh Thread: Equinox Container: 1f845bde-bb4f-4875-bc6f-21e3504cf437][BundleStartStopLogger:68] STARTED com.kefaihub.rest.impl_1.0.0 [1392]
+2025-04-26 12:33:11.096 INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:212] Processing com.kefaihub.rest.api-1.0.0.jar
+2025-04-26 12:33:14.100 INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:212] Processing com.kefaihub.rest.impl-1.0.0.jar
+2025-04-26 12:33:24.281 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:71] STOPPED com.kefaihub.rest.impl_1.0.0 [1392]
+2025-04-26 12:33:24.414 INFO  [Refresh Thread: Equinox Container: 1f845bde-bb4f-4875-bc6f-21e3504cf437][BundleStartStopLogger:68] STARTED com.kefaihub.rest.impl_1.0.0 [1392]
+2025-04-26 12:35:35.185 INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:212] Processing com.kefaihub.rest.impl-1.0.0.jar
+2025-04-26 12:35:41.254 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:71] STOPPED com.kefaihub.rest.impl_1.0.0 [1392]
+2025-04-26 12:35:41.325 INFO  [Refresh Thread: Equinox Container: 1f845bde-bb4f-4875-bc6f-21e3504cf437][BundleStartStopLogger:68] STARTED com.kefaihub.rest.impl_1.0.0 [1392]
+2025-04-26 12:38:05.292 INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:212] Processing com.kefaihub.rest.impl-1.0.0.jar
+2025-04-26 12:38:13.459 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:71] STOPPED com.kefaihub.rest.impl_1.0.0 [1392]
+2025-04-26 12:38:13.528 INFO  [Refresh Thread: Equinox Container: 1f845bde-bb4f-4875-bc6f-21e3504cf437][BundleStartStopLogger:68] STARTED com.kefaihub.rest.impl_1.0.0 [1392]

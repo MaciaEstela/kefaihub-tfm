@@ -1,0 +1,107 @@
+{
+    "LANG": {
+        "CA": "Catalán",
+        "ES": "Español"
+    },
+    "REGISTER": {
+      "TITLE": "Regístrate",
+      "NAME": "Nombre",
+      "SURNAME": "Apellido",
+      "EMAIL": "Correo electrónico",
+      "USERNAME": "Nombre de usuario",
+      "PASSWORD": "Contraseña",
+      "SUBMIT": "Registrarse",
+      "SUCCESS": "¡Usuario registrado correctamente!",
+      "REDIRECT": "Serás redirigido al login en unos segundos...",
+      "ERROR": {
+        "CONFLICT_USERNAME": "Este nombre de usuario ya existe. Elige otro.",
+        "CONFLICT_EMAIL": "Este correo electrónico ya está registrado.",
+        "GENERIC": "Se ha producido un error durante el registro. Inténtalo de nuevo."
+      },
+      "VALIDATION": {
+        "REQUIRED": "Este campo es obligatorio.",
+        "USERNAME_FORMAT": "Solo letras y números. Mínimo 4 caracteres.",
+        "EMAIL": "Formato de correo electrónico no válido.",
+        "PASSWORD": "La contraseña debe tener al menos 6 caracteres."
+      }
+    },
+    "LOGIN": {
+        "TITLE": "Iniciar sesión",
+        "EMAIL": "Correo electrónico",
+        "PASSWORD": "Contraseña",
+        "SUBMIT": "Entrar",
+        "SUCCESS": "Bienvenido",
+      "ERROR": {
+        "INVALID": "Nombre de usuario o contraseña incorrectos.",
+        "GENERIC": "Se ha producido un error al iniciar sesión.",
+        "NO_TOKEN": "No se ha recibido ningún token del servidor.",
+        "USER_FETCH": "No se pudo obtener la información del usuario."
+      }
+    },
+    "NAV": {
+        "LOGIN": "Iniciar sesión",
+        "REGISTER": "Regístrate",
+        "LOGOUT": "Cerrar sesión",
+        "PROFILE": "Mi perfil",
+        "WELCOME": "Hola",
+        "TOGGLE": "Alternar navegación"
+    },
+    "FOOTER": {
+  "COPYRIGHT": "© 2025 KefaiHub | Desarrollado por Macià Estela"
+},
+"PROFILE": {
+  "TITLE": "Mi perfil",
+  "TITLE.PASSWORD": "Cambiar contraseña",
+  "FIELD": {
+    "PASSWORD": "Nueva contraseña",
+    "CONFIRM": "Confirmar contraseña"
+  },
+  "BUTTON": {
+    "SAVE": "Guardar cambios",
+    "PASSWORD": "Actualizar contraseña"
+  },
+  "SUCCESS": {
+    "UPDATE": "Datos actualizados correctamente.",
+    "PASSWORD": "Contraseña actualizada correctamente."
+  },
+  "ERROR": {
+    "LOAD": "No se han podido cargar los datos del usuario.",
+    "UPDATE": "Error al guardar los cambios.",
+    "PASSWORD": "No se ha podido actualizar la contraseña.",
+    "PASSWORD_MATCH": "Las contraseñas no coinciden."
+  }
+},
+"ADMIN": {
+  "USERS": {
+    "TITLE": "Gestión de usuarios",
+    "VIEW": "Ver",
+    "EDIT_TITLE": "Editar usuario",
+    "NEW": "Nuevo usuario",
+    "SUCCESS": {
+      "UPDATE": "Usuario actualizado correctamente.",
+      "PASSWORD": "Contraseña actualizada correctamente.",
+      "ROLE_ADDED": "Rol asignado correctamente.",
+      "ROLE_REMOVED": "Rol eliminado correctamente.",
+      "CREATED": "Usuario creado correctamente."
+    },
+    "ERROR": {
+      "LOAD": "No se pudo cargar el usuario.",
+      "UPDATE": "Error al actualizar el usuario.",
+      "PASSWORD": "Error al actualizar la contraseña.",
+      "PASSWORD_MATCH": "Las contraseñas no coinciden.",
+      "ROLE_ADD": "No se pudo asignar el rol.",
+      "ROLE_REMOVE": "No se pudo eliminar el rol.",
+      "CREATE": "Error al crear el usuario.",
+      "ROLE_LOAD": "No se pudieron cargar los roles disponibles."
+    },
+    "ROLES": {
+      "TITLE": "Roles asignados",
+      "SELECT": "Selecciona un rol...",
+      "ADD": "Añadir rol",
+      "REMOVE": "Eliminar rol"
+    }
+  }
+}
+
+  }
+  

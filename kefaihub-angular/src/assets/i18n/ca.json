@@ -1,0 +1,105 @@
+{
+    "LANG": {
+    "CA": "Català",
+    "ES": "Espanyol"
+    },
+    "REGISTER": {
+      "TITLE": "Registra't",
+      "NAME": "Nom",
+      "SURNAME": "Cognom",
+      "EMAIL": "Correu electrònic",
+      "USERNAME": "Nom d'usuari",
+      "PASSWORD": "Contrasenya",
+      "SUBMIT": "Registrar-se",
+      "SUCCESS": "Usuari registrat correctament!",
+      "REDIRECT": "Seràs redirigit al login en uns segons...",
+      "ERROR": {
+        "CONFLICT_USERNAME": "Aquest nom d'usuari ja existeix. Tria'n un altre.",
+        "CONFLICT_EMAIL": "Aquest correu electrònic ja està registrat.",
+        "GENERIC": "S'ha produït un error durant el registre. Torna-ho a intentar."
+      },
+      "VALIDATION": {
+        "REQUIRED": "Aquest camp és obligatori.",
+        "USERNAME_FORMAT": "Només lletres i números. Mínim 4 caràcters.",
+        "EMAIL": "Format de correu electrònic no vàlid.",
+        "PASSWORD": "La contrasenya ha de tenir almenys 6 caràcters."
+      }
+    },
+    "LOGIN": {
+        "TITLE": "Iniciar sessió",
+        "EMAIL": "Correu electrònic",
+        "PASSWORD": "Contrasenya",
+        "SUBMIT": "Entrar",
+        "SUCCESS": "Benvingut",
+      "ERROR": {
+        "INVALID": "Nom d'usuari o contrasenya incorrectes.",
+        "GENERIC": "S'ha produït un error en iniciar sessió.",
+        "NO_TOKEN": "No s'ha rebut cap token del servidor.",
+        "USER_FETCH": "No s'ha pogut obtenir la informació de l'usuari."
+      }
+    },
+    "NAV": {
+        "LOGIN": "Inicia sessió",
+        "REGISTER": "Registra't",
+        "LOGOUT": "Tanca sessió",
+        "PROFILE": "El meu perfil",
+        "WELCOME": "Hola",
+        "TOGGLE": "Commuta la navegació"
+    },
+    "FOOTER": {
+        "COPYRIGHT": "© 2025 KefaiHub | Desenvolupat per Macià Estela"
+        },
+        "PROFILE": {
+  "TITLE": "El meu perfil",
+  "TITLE.PASSWORD": "Canviar contrasenya",
+  "FIELD": {
+    "PASSWORD": "Nova contrasenya",
+    "CONFIRM": "Confirma la contrasenya"
+  },
+  "BUTTON": {
+    "SAVE": "Desar canvis",
+    "PASSWORD": "Actualitzar contrasenya"
+  },
+  "SUCCESS": {
+    "UPDATE": "Dades actualitzades correctament.",
+    "PASSWORD": "Contrasenya actualitzada correctament."
+  },
+  "ERROR": {
+    "LOAD": "No s'han pogut carregar les dades de l'usuari.",
+    "UPDATE": "Error en desar els canvis.",
+    "PASSWORD": "No s'ha pogut actualitzar la contrasenya.",
+    "PASSWORD_MATCH": "Les contrasenyes no coincideixen."
+  }
+},
+"ADMIN": {
+  "USERS": {
+    "TITLE": "Gestió d'usuaris",
+    "VIEW": "Veure",
+    "EDIT_TITLE": "Editar usuari",
+    "NEW": "Nou usuari",
+    "SUCCESS": {
+      "UPDATE": "Usuari actualitzat correctament.",
+      "PASSWORD": "Contrasenya actualitzada correctament.",
+      "ROLE_ADDED": "Rol assignat correctament.",
+      "ROLE_REMOVED": "Rol eliminat correctament.",
+      "CREATED": "Usuari creat correctament."
+    },
+    "ERROR": {
+      "LOAD": "No s'ha pogut carregar l'usuari.",
+      "UPDATE": "Error en actualitzar l'usuari.",
+      "PASSWORD": "Error en actualitzar la contrasenya.",
+      "PASSWORD_MATCH": "Les contrasenyes no coincideixen.",
+      "ROLE_ADD": "No s'ha pogut assignar el rol.",
+      "ROLE_REMOVE": "No s'ha pogut eliminar el rol.",
+      "CREATE": "Error en crear l'usuari.",
+      "ROLE_LOAD": "No s'han pogut carregar els rols disponibles."
+    },
+    "ROLES": {
+      "TITLE": "Rols assignats",
+      "SELECT": "Selecciona un rol...",
+      "ADD": "Afegir rol",
+      "REMOVE": "Eliminar rol"
+    }
+  }}
+  }
+  

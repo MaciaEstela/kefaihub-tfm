@@ -1,0 +1,230 @@
+Execution date: mié, abr 23, 2025 08:23:00 UTC
+
+Execution time: 13 seconds
+
+Result: unresolved
+
+Status: Unsatisfied components prevent upgrade processes to be registered
+
+
+Type: major
+
+Portal initial build number: 7403
+Portal initial schema version: 31.14.0
+Portal final build number: 7403
+Portal final schema version: 31.14.0
+Portal expected build number: 7403
+Portal expected schema version: 31.14.0
+
+Database version: mysql 8.0
+
+Document library root directory: D:/UOC/MasterLlocsWeb/TFM/liferay-portal/data/document_library
+Document library storage implementation: com.liferay.portal.store.file.system.FileSystemStore
+Document library storage size: 7.6 MB
+
+Liferay home: D:/UOC/MasterLlocsWeb/TFM/liferay-portal
+
+Jvm arguments
+-------------
+--add-opens=java.base/java.lang.invoke=ALL-UNNAMED
+--add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+--add-opens=java.base/java.lang=ALL-UNNAMED
+--add-opens=java.base/java.net=ALL-UNNAMED
+--add-opens=java.base/java.util=ALL-UNNAMED
+--add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED
+--add-opens=java.base/sun.net.www.protocol.https=ALL-UNNAMED
+--add-opens=java.base/sun.util.calendar=ALL-UNNAMED
+--add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED
+-Dcatalina.base=D:/UOC/MasterLlocsWeb/TFM/liferay-portal/tomcat
+-Dcatalina.home=D:/UOC/MasterLlocsWeb/TFM/liferay-portal/tomcat
+-Dcom.sun.management.jmxremote
+-Dcom.sun.management.jmxremote.authenticate=false
+-Dcom.sun.management.jmxremote.port=8099
+-Dcom.sun.management.jmxremote.ssl=false
+-Dfile.encoding=UTF8
+-Djava.io.tmpdir=D:/UOC/MasterLlocsWeb/TFM/liferay-portal/tomcat/temp
+-Djava.net.preferIPv4Stack=true
+-Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+-Djava.util.logging.config.file=D:/UOC/MasterLlocsWeb/TFM/liferay-portal/tomcat/conf/logging.properties
+-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+-Djdk.tls.ephemeralDHKeySize=2048
+-Dorg.apache.catalina.loader.WebappClassLoader.ENABLE_CLEAR_REFERENCES=false
+-Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+-Duser.timezone=GMT
+-XX:MaxMetaspaceSize=768m
+-XX:MetaspaceSize=768m
+-Xmx2560m
+
+Properties
+----------
+access.control.sanitize.security.exception=false
+admin.email.from.address=test@test.com
+admin.email.from.name=Test Test
+browser.launcher.url=
+com.liferay.portal.servlet.filters.etag.ETagFilter=false
+com.liferay.portal.servlet.filters.header.HeaderFilter=false
+com.liferay.portal.servlet.filters.themepreview.ThemePreviewFilter=true
+combo.check.timestamp=true
+company.default.locale=ca_ES
+company.default.name=Kefaihub
+company.default.time.zone=UTC
+company.default.web.id=test.com
+company.security.strangers.verify=false
+cors.disable.authorization.context.check=true
+default.admin.email.address.prefix=test
+direct.servlet.context.reload=true
+enterprise.product.notification.enabled=false
+feature.flag.ui.visible[dev]=true
+include-and-override=portal-bundle.properties,D:/UOC/MasterLlocsWeb/TFM/liferay-portal/portal-bundle.properties,portal-ext.properties,D:/UOC/MasterLlocsWeb/TFM/liferay-portal/portal-ext.properties,portal-setup-wizard.properties,D:/UOC/MasterLlocsWeb/TFM/liferay-portal/portal-setup-wizard.properties,${external-properties},D:/UOC/MasterLlocsWeb/TFM/liferay-portal/${external-properties},portal-developer.properties
+initial.system.check.enabled=true
+javascript.fast.load=true
+javascript.log.enabled=false
+jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver
+jdbc.default.password=********
+jdbc.default.url=jdbc:mysql://localhost/kefaihub
+jdbc.default.username=root
+json.service.serialize.throwable=true
+layout.template.cache.enabled=false
+liferay.home=D:/UOC/MasterLlocsWeb/TFM/liferay-portal
+minifier.enabled=false
+module.framework.properties.osgi.console=localhost:11311
+schema.module.build.auto.upgrade=true
+setup.wizard.enabled=false
+template.engine.cache.enabled=false
+terms.of.use.required=false
+theme.css.fast.load=false
+theme.css.fast.load.check.request.parameter=true
+theme.images.fast.load=false
+theme.images.fast.load.check.request.parameter=true
+upgrade.database.auto.run=true
+
+Properties files
+----------------
+D:\UOC\MasterLlocsWeb\TFM\liferay-portal\portal-ext.properties
+D:\UOC\MasterLlocsWeb\TFM\liferay-portal\portal-setup-wizard.properties
+D:\UOC\MasterLlocsWeb\TFM\liferay-portal\tomcat\webapps\ROOT\WEB-INF\classes\portal-developer.properties
+
+Table Name                             Initial Rows           Final Rows
+------------------------------------------------------------------------
+regionlocalization                            64956                64956
+oa2auths_oa2scopegrants                        8236                 8236
+region                                         5040                 5040
+countrylocalization                            3237                 3237
+resourceaction                                 2619                 2619
+resourcepermission                             1876                 1876
+classname_                                      458                  458
+audit_auditevent                                388                  388
+country                                         249                  249
+portlet                                         243                  243
+ploentry                                        208                  208
+release_                                        198                  198
+objectfield                                     183                  183
+oauth2scopegrant                                149                  149
+servicecomponent                                 88                   88
+listtype                                         81                   81
+ddmtemplate                                      69                   69
+ddmtemplateversion                               69                   69
+oauth2authorization                              61                   61
+portletpreferences                               53                   53
+ddmfieldattribute                                48                   48
+portletpreferencevalue                           44                   44
+assetentry                                       40                   40
+fragmententrylink                                38                   38
+ddmfield                                         36                   36
+configuration_                                   34                   34
+portalpreferencevalue                            34                   34
+counter                                          32                   32
+role_                                            31                   31
+friendlyurlentry                                 30                   30
+friendlyurlentrylocalization                     30                   30
+friendlyurlentrymapping                          30                   30
+layoutset                                        24                   24
+objectviewcolumn                                 24                   24
+kaleotaskassignment                              20                   20
+layout                                           19                   19
+layoutfriendlyurl                                19                   19
+sapentry                                         19                   19
+amimageentry                                     18                   18
+objectdefinition                                 16                   16
+objectfolderitem                                 16                   16
+systemevent                                      13                   13
+ddmstoragelink                                   12                   12
+ddmstructurelink                                 12                   12
+dlfileentry                                      12                   12
+dlfileentrymetadata                              12                   12
+dlfileversion                                    12                   12
+group_                                           12                   12
+ddmstructure                                     11                   11
+ddmstructurelayout                               11                   11
+ddmstructureversion                              11                   11
+commercecurrency                                 10                   10
+kaleotransition                                  10                   10
+listtypeentry                                    10                   10
+users_roles                                      10                   10
+viewcountentry                                   10                   10
+cpmeasurementunit                                 9                    9
+kaleonode                                         9                    9
+objectfieldsetting                                9                    9
+layoutpagetemplatestructure                       8                    8
+layoutpagetemplatestructurerel                    8                    8
+socialactivity                                    8                    8
+socialactivityset                                 8                    8
+contact_                                          6                    6
+kaleoaction                                       6                    6
+kaleonotification                                 6                    6
+kaleonotificationrecipient                        6                    6
+notificationrecipientsetting                      6                    6
+user_                                             6                    6
+accountrole                                       5                    5
+dispatchlog                                       5                    5
+dlfolder                                          5                    5
+expandocolumn                                     4                    4
+kaleotask                                         4                    4
+o_19628157332088_province                         4                    4
+o_19628157332088_province_l                       4                    4
+o_19628157332088_province_x                       4                    4
+objectentry                                       4                    4
+objectview                                        4                    4
+portalpreferences                                 4                    4
+segmentsexperience                                4                    4
+announcementsdelivery                             3                    3
+assetvocabulary                                   3                    3
+dlfileentrytype                                   3                    3
+layoututilitypageentry                            3                    3
+oauth2application                                 3                    3
+oauth2applicationscopealiases                     3                    3
+objectrelationship                                3                    3
+repository                                        3                    3
+users_groups                                      3                    3
+commercepricelist                                 2                    2
+cpconfigurationentrysetting                       2                    2
+kaleodefinition                                   2                    2
+kaleodefinitionversion                            2                    2
+layoutclassedmodelusage                           2                    2
+listtypedefinition                                2                    2
+objectfolder                                      2                    2
+ticket                                            2                    2
+user_x_19628157332088                             2                    2
+accountgroup                                      1                    1
+accountgrouprel                                   1                    1
+batchengineimporttask                             1                    1
+commercecatalog                                   1                    1
+company                                           1                    1
+companyinfo                                       1                    1
+cpconfigurationentry                              1                    1
+cpconfigurationlist                               1                    1
+dispatchtrigger                                   1                    1
+dlstoragequota                                    1                    1
+expandotable                                      1                    1
+kaleocondition                                    1                    1
+layoutpagetemplateentry                           1                    1
+layoutprototype                                   1                    1
+notificationrecipient                             1                    1
+notificationtemplate                              1                    1
+objectaction                                      1                    1
+passwordpolicy                                    1                    1
+quartz_cron_triggers                              1                    1
+quartz_job_details                                1                    1
+quartz_triggers                                   1                    1
+virtualhost                                       1                    1
+

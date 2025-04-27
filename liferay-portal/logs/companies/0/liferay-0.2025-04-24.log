@@ -1,0 +1,48 @@
+2025-04-24 17:14:03.618 INFO  [main][PortalContextLoaderListener:114] JVM arguments: --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.https=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Djava.util.logging.config.file=D:\UOC\MasterLlocsWeb\TFM\liferay-portal\tomcat\conf\logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=D:\UOC\MasterLlocsWeb\TFM\liferay-portal\tomcat -Dcatalina.home=D:\UOC\MasterLlocsWeb\TFM\liferay-portal\tomcat -Djava.io.tmpdir=D:\UOC\MasterLlocsWeb\TFM\liferay-portal\tomcat\temp
+2025-04-24 17:15:04.776 INFO  [SystemExecutorServiceUtil-1][DataSourceFactoryImpl:439] Rewrite JDBC URL from jdbc:mysql://localhost/kefaihub to jdbc:mysql://localhost/kefaihub?cachePrepStmts=true&characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&prepStmtCacheSize=1000&prepStmtCacheSqlLimit=2048&rewriteBatchedStatements=true&serverTimezone=GMT&useFastDateParsing=false&useLocalSessionState=true&useLocalTransactionState=true&useUnicode=true
+2025-04-24 17:15:05.291 INFO  [SystemExecutorServiceUtil-1][DialectDetector:134] Using dialect org.hibernate.dialect.MySQL8Dialect for MySQL 8.0
+2025-04-24 17:15:06.507 INFO  [main][ModuleFrameworkImpl:1355] Starting initial bundles
+2025-04-24 17:15:12.210 INFO  [main][InterpolationConfigurationPlugin:109] Configured directory for secrets: D:/UOC/MasterLlocsWeb/TFM/liferay-portal/osgi/configs
+2025-04-24 17:15:13.886 INFO  [main][ModuleFrameworkImpl:1645] Started initial bundles
+2025-04-24 17:15:13.886 INFO  [main][ModuleFrameworkImpl:1690] Starting dynamic bundles
+2025-04-24 17:15:19.970 WARN  [Start Level: Equinox Container: 1f845bde-bb4f-4875-bc6f-21e3504cf437][SidecarManager:70] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2025-04-24 17:15:39.182 INFO  [main][ModuleFrameworkImpl:1713] Started dynamic bundles
+2025-04-24 17:15:39.182 INFO  [main][ModuleFrameworkImpl:1720] Starting web bundles
+2025-04-24 17:15:43.029 INFO  [main][ModuleFrameworkImpl:1774] Started web bundles
+2025-04-24 17:15:43.030 INFO  [main][ModuleFrameworkImpl:283] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+2025-04-24 17:15:44.502 INFO  [main][LoggingTimer:74] Starting com.liferay.portal.verify.VerifyProperties#verifySystemProperties
+2025-04-24 17:15:44.502 INFO  [main][LoggingTimer:35] Completed com.liferay.portal.verify.VerifyProperties#verifySystemProperties in 1 ms
+2025-04-24 17:15:44.503 INFO  [main][LoggingTimer:74] Starting com.liferay.portal.verify.VerifyProperties#verifyPortalProperties
+2025-04-24 17:15:44.508 INFO  [main][LoggingTimer:35] Completed com.liferay.portal.verify.VerifyProperties#verifyPortalProperties in 5 ms
+2025-04-24 17:15:45.791 INFO  [SystemExecutorServiceUtil-13][Sidecar:100] Sidecar Elasticsearch 7.17.26 liferay_sidecar started at 127.0.0.1:9201
+2025-04-24 17:15:45.859 INFO  [main][StartupHelperUtil:100] There are no patches installed
+2025-04-24 17:15:47.557 INFO  [main][AutoDeployDir:152] Auto deploy scanner started for D:\UOC\MasterLlocsWeb\TFM\liferay-portal\deploy
+2025-04-24 17:16:01.403 INFO  [main][LoggingTimer:74] Starting com.liferay.portal.db.index.IndexUpdaterUtil#updateAllIndexes#Updating database indexes
+2025-04-24 17:16:05.459 INFO  [main][UpgradeRecorder:156] No pending upgrades to run
+2025-04-24 17:16:05.460 INFO  [main][UpgradeReport:96] Upgrade report was not generated because no upgrade processes were executed
+2025-04-24 17:16:06.044 INFO  [main][LoggingTimer:35] Completed com.liferay.portal.db.index.IndexUpdaterUtil#updateAllIndexes#Updating database indexes in 4641 ms
+2025-04-24 17:16:06.206 INFO  [main][DependencyManagerSyncUtil:114] Available checkers: [AOP Service Registrar System Checker, Declarative Service Soft Circular Dependency System Checker, Declarative Service Unsatisfied Component System Checker, Spring Extender Unavailable Component System Checker, Pending Upgrade System Checker]
+2025-04-24 17:16:06.207 INFO  [main][DependencyManagerSyncUtil:114] Running "AOP Service Registrar System Checker". You can run this by itself with command "aop:failures" in gogo shell.
+2025-04-24 17:16:06.208 INFO  [main][DependencyManagerSyncUtil:114] AOP Service Registrar System Checker check result: No issues were found.
+2025-04-24 17:16:06.208 INFO  [main][DependencyManagerSyncUtil:114] Running "Declarative Service Soft Circular Dependency System Checker". You can run this by itself with command "ds:softCircularDependency" in gogo shell.
+2025-04-24 17:16:08.626 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for D:\UOC\MasterLlocsWeb\TFM\liferay-portal\tomcat\temp\20250424171608363FTHQBFTR\admin-theme.war
+2025-04-24 17:16:09.104 INFO  [main][DependencyManagerSyncUtil:114] Declarative Service Soft Circular Dependency System Checker check result: No issues were found.
+2025-04-24 17:16:09.105 INFO  [main][DependencyManagerSyncUtil:114] Running "Declarative Service Unsatisfied Component System Checker". You can run this by itself with command "ds:unsatisfied" in gogo shell.
+2025-04-24 17:16:11.289 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for D:\UOC\MasterLlocsWeb\TFM\liferay-portal\tomcat\temp\20250424171608363FTHQBFTR\admin-theme.war copied successfully
+2025-04-24 17:16:12.910 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for D:\UOC\MasterLlocsWeb\TFM\liferay-portal\tomcat\temp\20250424171612858DNKTJVNJ\classic-theme.war
+2025-04-24 17:16:14.373 INFO  [main][DependencyManagerSyncUtil:114] Declarative Service Unsatisfied Component System Checker check result: No issues were found.
+2025-04-24 17:16:14.373 INFO  [main][DependencyManagerSyncUtil:114] Running "Spring Extender Unavailable Component System Checker". You can run this by itself with command "dm na" in gogo shell.
+2025-04-24 17:16:14.375 INFO  [main][DependencyManagerSyncUtil:114] Spring Extender Unavailable Component System Checker check result: No issues were found.
+2025-04-24 17:16:14.375 INFO  [main][DependencyManagerSyncUtil:114] Running "Pending Upgrade System Checker". You can run this by itself with command "upgrade:pending" in gogo shell.
+2025-04-24 17:16:14.377 INFO  [main][DependencyManagerSyncUtil:114] Pending Upgrade System Checker check result: No issues were found.
+2025-04-24 17:16:16.742 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for D:\UOC\MasterLlocsWeb\TFM\liferay-portal\tomcat\temp\20250424171612858DNKTJVNJ\classic-theme.war copied successfully
+2025-04-24 17:16:18.635 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for D:\UOC\MasterLlocsWeb\TFM\liferay-portal\tomcat\temp\20250424171617797NMZPMSBV\dialect-theme.war
+2025-04-24 17:16:22.078 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for D:\UOC\MasterLlocsWeb\TFM\liferay-portal\tomcat\temp\20250424171617797NMZPMSBV\dialect-theme.war copied successfully
+2025-04-24 17:16:23.174 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for D:\UOC\MasterLlocsWeb\TFM\liferay-portal\tomcat\temp\20250424171623109HAEUATYI\minium-theme.war
+2025-04-24 17:16:26.420 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for D:\UOC\MasterLlocsWeb\TFM\liferay-portal\tomcat\temp\20250424171623109HAEUATYI\minium-theme.war copied successfully
+2025-04-24 17:16:28.238 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for D:\UOC\MasterLlocsWeb\TFM\liferay-portal\tomcat\temp\20250424171627640KBYMKHNP\speedwell-theme.war
+2025-04-24 17:16:31.299 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for D:\UOC\MasterLlocsWeb\TFM\liferay-portal\tomcat\temp\20250424171627640KBYMKHNP\speedwell-theme.war copied successfully
+2025-04-24 17:18:27.637 INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:212] Processing com.kefaihub.rest.api-1.0.0.jar
+2025-04-24 17:18:33.571 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:68] STARTED com.kefaihub.rest.api_1.0.0 [1391]
+2025-04-24 17:20:27.671 INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:212] Processing com.kefaihub.rest.impl-1.0.0.jar
+2025-04-24 17:20:34.594 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:68] STARTED com.kefaihub.rest.impl_1.0.0 [1392]

@@ -1,0 +1,66 @@
+{
+  "system": false,
+  "name_i18n": { "ca-ES": "EventCategory" },
+  "name": "EventCategory",
+  "listTypeEntries": [
+    {
+      "name_i18n": { "ca-ES": "Arts i cultura", "es-ES": "Artes y cultura" },
+      "name": "Arts i cultura",
+      "type": "",
+      "key": "ArtsAndCulture",
+      "externalReferenceCode": "0d7eac1a-0405-24c6-a8ea-9fa742890c3e"
+    },
+    {
+      "name_i18n": { "ca-ES": "Música i shows", "es-ES": "Música y shows" },
+      "name": "Música i shows",
+      "type": "",
+      "key": "MusicAndShows",
+      "externalReferenceCode": "bfdd1292-35f9-b65e-c0ca-6ecf329ec199"
+    },
+    {
+      "name_i18n": { "ca-ES": "Gastronomia", "es-ES": "Gastronomia" },
+      "name": "Gastronomia",
+      "type": "",
+      "key": "Gastronomy",
+      "externalReferenceCode": "d0336992-edfd-73f5-e01c-9831ee46e4f1"
+    },
+    {
+      "name_i18n": {
+        "ca-ES": "Tallers i capacitació",
+        "es-ES": "Talleres y capacitación"
+      },
+      "name": "Tallers i capacitació",
+      "type": "",
+      "key": "WorkshopsAndTraining",
+      "externalReferenceCode": "e8725588-129c-f4ba-53bb-e499192b5eee"
+    },
+    {
+      "name_i18n": {
+        "ca-ES": "Festivitats i tradicions",
+        "es-ES": "Festividades y tradiciones"
+      },
+      "name": "Festivitats i tradicions",
+      "type": "",
+      "key": "FestivitiesAndTraditions",
+      "externalReferenceCode": "17cd0c12-d7e3-0a68-0ac1-b9bbe3f5bc50"
+    },
+    {
+      "name_i18n": { "ca-ES": "Altres", "es-ES": "Otros" },
+      "name": "Altres",
+      "type": "",
+      "key": "Others",
+      "externalReferenceCode": "1ed5f571-234d-10c2-b89f-fcaef99c047a"
+    },
+    {
+      "name_i18n": {
+        "ca-ES": "Esports i Benestar",
+        "es-ES": "Deporte y bienestar"
+      },
+      "name": "Esports i Benestar",
+      "type": "",
+      "key": "SportsAndWellness",
+      "externalReferenceCode": "678331a2-f846-df0f-2bdb-0c27ad324a78"
+    }
+  ],
+  "externalReferenceCode": "erc-list-eventcategory"
+}

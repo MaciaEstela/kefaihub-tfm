@@ -1,0 +1,29 @@
+{
+  "system": false,
+  "name_i18n": { "ca-ES": "EventType" },
+  "name": "EventType",
+  "listTypeEntries": [
+    {
+      "name_i18n": { "ca-ES": "Presencial", "es-ES": "Presencial" },
+      "name": "Presencial",
+      "type": "",
+      "key": "Onsite",
+      "externalReferenceCode": "d33f0c97-9080-f59f-c2d9-4f3dab606410"
+    },
+    {
+      "name_i18n": { "ca-ES": "Híbrid", "es-ES": "Híbrido" },
+      "name": "Híbrid",
+      "type": "",
+      "key": "Hybrid",
+      "externalReferenceCode": "4ad9613a-684b-beb5-0539-ec673ff180fe"
+    },
+    {
+      "name_i18n": { "ca-ES": "Remot", "es-ES": "Remoto" },
+      "name": "Remot",
+      "type": "",
+      "key": "Online",
+      "externalReferenceCode": "adac08c4-4cbb-89fb-7690-0001e86be9c3"
+    }
+  ],
+  "externalReferenceCode": "erc-list-eventtype"
+}
